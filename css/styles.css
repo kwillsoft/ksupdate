@@ -1,0 +1,668 @@
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Theme Color: #2d62d3           #244EA9 is the monochromatic complimentary color     
+    Darkmode Theme color #030113   #0B0443is the monochromatic complimentary color      
+
+           fonts: 'Comfortaa',cursive  
+        sections:
+               1. Top section- The navbar, logo etc.
+               2. Parallax section-the image behind the jumbotron.
+               3. Hello section- "Hello my name is...".
+               4. Slider section
+               5. Recent Projects button
+               6. Intro section
+               7.
+               8.
+               9.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------------------1. Top Section------------------------------------------------------------------------*/
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+body{
+  color:black;
+  font-family: 'Raleway', sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;}
+
+.flex-container {
+  display: flex;
+}
+
+.mylogo{
+font-family: 'Nixie One', cursive;
+font-weight: bold;
+color: #2c62d3 !important;
+
+}
+
+#collapsibleNavbar{
+padding-left: 40%;
+background-color: none;
+}
+
+
+.navbar-toggler{
+  color:#2c62d3
+
+}
+
+.navbar-brand {
+  padding:14px !important;
+}
+
+
+
+
+
+
+  /*-------------------------------------------------------------2. Parallax Section------------------------------------------------------------------------------------*/ 
+
+
+  #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+  body {
+   /* background:  url('https://img.techpowerup.org/191210/desk.png') no-repeat center center fixed ;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .content1 {
+    background: url('https://user-images.githubusercontent.com/19905406/179640388-f1945690-7616-4b0d-a284-7b0d5fe2dda4.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-color: whitesmoke;
+  
+  }
+  .content1.active {
+    background:url('https://user-images.githubusercontent.com/19905406/179640517-debbad10-3da0-42f9-b6a0-b774f8809d6b.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #2c62d3;
+  }
+
+  .content1.active .inner-text{
+    color:white !important;
+  }
+  .content1.active .maintext1{
+    color:white !important;
+  }
+
+  .content2 {
+  
+    background-color: whitesmoke;
+  
+  }
+  .content2 button{
+        background-color: whitesmoke;
+
+  }
+  .content2.active {
+    background-color: rgb(3, 1, 19);  
+     color: white !important;
+  }
+
+
+ 
+  .content2.active .nav-link{
+    color:white !important;
+  }
+  .content2.active .navbar{
+    color: rgb(3, 1, 19)!important;
+    
+  }
+
+  .content2.active .about{
+    background-color: #0B0443!important;
+    color:whitesmoke;
+  }
+  .content2.active .recent{
+    background-color: #0B0443!important;
+    color:whitesmoke;
+  }
+  .content2.active .portcard{
+    background-color:#47426d!important;
+    color:whitesmoke;
+  }
+  .content2.active .what{
+    background-color: #0B0443!important;
+    color:whitesmoke;
+  }
+  .content2.active .card{
+    background-color: #0B0443!important;
+    color:whitesmoke;
+  }
+  .content2.active .toolbox{
+    background-color: #0B0443!important;
+    color:whitesmoke;
+  }
+  .content2.active .contact{
+    background-color: #0B0443!important;
+    color:whitesmoke;
+  }
+  .card.active {
+    text-align: center !important;
+    background-color:#1c1458!important;
+  }
+
+  .toolbox{
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .card h5{
+    font-weight: bold;
+
+  }
+  
+
+  /* Dark/Light Button */
+  /* old-school "down" effect on clic + color tweak */
+.mybtn:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+.mybtn:hover {
+  color:#2c62d3;
+  border-color: currentColor;
+  background-color: white;
+}
+
+  .mybtn {
+    
+     /* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* create a small space when buttons wrap on 2 lines */
+  margin: 2px 0;
+
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 1px transparent;
+  border-radius: 4px;
+
+  /* size comes from text & padding (no width/height) */
+  padding: 0.1em .5em;
+
+  /* make sure colors have enough contrast! */
+  color: #ffffff;
+  background-color:#1c1458;
+    /* ... */
+    /* all browsers: remove the default outline since
+        we are rolling our own focus styles */
+    outline: none;
+  }
+  
+  /* Firefox: removes the inner border shown on focus */
+  .mybtn::-moz-focus-inner {
+    border: none;
+  }
+  .mybtn:hover,
+.mybtn:focus {
+  color: white;
+  border-color: currentColor;
+  background-color: #2c62d3
+}
+ /* inverse colors on hover */
+.mybtn:hover {
+  color:#2c62d3;
+  border-color: #2c62d3;
+  background-color: white;
+}
+
+/* make sure we have a visible focus ring */
+.mybtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #2c62d3
+    0 0 0 1.5px #2c62d3
+}
+/* hide focus style if not from keyboard navigation */
+.js-focus-visible .mybtn:focus:not(.focus-visible) {
+  box-shadow: none;
+}
+
+
+  
+  
+
+
+/*-------------------------------------------------------------------------3. "Hello" section----------------------------------------------------------------------------*/
+
+
+
+  .hi{
+    text-align: center;
+    padding-top: 180px;
+    color:black;
+
+  }
+.blue{color:#2c62d3;
+      font-weight: bolder
+  ;}
+
+ .kicker{
+
+color:  #244EA9 !important;
+font-weight: 900 !important;}
+
+  .inner_text{ 
+    font-weight: bolder!important;
+ }
+
+    .caps{
+
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+
+
+  
+/*                                                                   
+                                                               slider section (appearance and animation)
+---------------------------------------------------------------------- 4a. slider appearance---------------------------------------------------------------------------*/
+
+
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  padding-top: 0;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+.no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+.no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+.cd-headline.slide span {
+  display: inline-block;
+  padding: .2em 0;
+}
+.cd-headline.slide .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+  width: auto!important;
+}
+.cd-headline.slide b {
+  opacity: 0;
+  top: .2em;
+}
+
+
+ /*                                                           
+-------------------------------------------------------------- 4b.slider animation-------------------------------------------------------------------------------*/
+
+
+
+.cd-headline.slide b.is-visible {
+  top: 0;
+  opacity: 1;
+  -webkit-animation: slide-in 0.6s;
+  -moz-animation: slide-in 0.6s;
+  animation: slide-in 0.6s;
+}
+.cd-headline.slide b.is-hidden {
+  -webkit-animation: slide-out 0.6s;
+  -moz-animation: slide-out 0.6s;
+  animation: slide-out 0.6s;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slide-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(120%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+  }
+}
+@-moz-keyframes slide-out {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -moz-transform: translateY(120%);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(100%);
+  }
+}
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(120%);
+    -moz-transform: translateY(120%);
+    -ms-transform: translateY(120%);
+    -o-transform: translateY(120%);
+    transform: translateY(120%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+
+
+/*--------------------------------------------------------------------5. "recent projects" button--------------------------------------------------------- */
+
+#button{
+  font-weight: bold;
+}
+
+  #button-div{
+
+    padding: 65px 0 100px 0; text-align:center;
+  }
+
+
+/*----------------------------------------------------------------------6.intro section--------------------------------------------------------------------- */
+
+  .maintext1{
+padding: 40px 85px ;
+text-align: center;
+color:#282828;
+font-family: 'Raleway', sans-serif;
+  }
+
+
+
+/*about section*/
+
+.about{
+ width: 100%;
+ background-color: White;
+}
+@media screen and (max-width: 960px) {
+  #about-text {
+    width: 100%;
+    padding: 25px !important;
+    position: absolute;
+    
+   }
+ }
+
+
+@media screen and (min-width: 960px) {
+  #about-text {
+    max-width: 45%;
+    padding: 90px 90px 90px 90px;
+
+   }
+ }
+
+
+ 
+     @media screen and (min-width: 960px) {
+      #imagediv {
+        max-width: 45%;
+        padding: 50px 300px 90px 90px;
+    
+       }
+     }
+   
+     @media screen and (max-width: 960px) {
+      #about-text {
+        width: 100%;
+        padding: 35px;
+        text-align: left;
+    
+       }
+     }
+     @media screen and (max-width: 960px) {
+      .caps  {
+        font-size: 18px!important;
+       }
+     }
+     @media screen and (max-width: 960px) {
+      h5  {
+        font-size: 14px!important;
+       }
+     }
+     @media screen and (max-width: 960px) {
+      #imagediv {
+        width: 50%;
+        padding: 338px 0px 0px 0px;
+        text-align: inherit center;
+        
+       }
+     }
+
+     
+
+      @media screen and (max-width: 960px) {
+        .full {
+          width: 300px;
+          padding-bottom: 30px;
+
+           }
+
+     }
+/*-----------------------------------------------------recent----------------------------------------------------------------------------------------------- */   
+.recent{
+text-align: center;
+margin: 0 !important;
+line-height: .5;
+padding: 120px 0 40px 0;
+
+}
+
+
+.card-deck{
+  text-align: center;
+
+}
+
+.card{
+border-radius: 10px;
+padding: 10px;
+}
+
+.card-deck{
+
+  margin: 10px;
+}
+
+.card-im-1{
+  width: 80px !important;
+  margin: 0 auto;
+  padding: 3px;
+
+}
+.card-im-2{
+  width: 80px !important;
+  margin: 0 auto;
+  padding: 3px;
+
+}
+.card-im-3{
+height: 75%;
+  margin: 0 auto;
+  padding: 3px;
+
+
+}
+.card-im-3a{
+  height: 110px ;
+  margin: 0 auto;
+    padding: 3px;
+  
+  }
+.card-im-5{
+  width: 200px !important;
+  margin: 0 auto;
+  padding: 3px;
+
+}
+.card-img{
+opacity: .045 !important;
+max-width: 55%;
+margin: 0 auto;
+
+}
+.web{
+padding-top: 100px !important;
+
+}
+
+.servicesitem{
+
+  color: white;
+  background-color: deepskyblue;
+  border: deepskyblue;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  font-size: 68px;
+  text-align: center;
+  vertical-align: center;
+padding: 14px;
+  
+
+}
+
+.service-top{
+  text-align: center;
+}
+
+#footer {
+  padding-top: 10px;
+  left:0px;
+  bottom:0px;
+  height:60px;
+  width:100%;
+  background:#999;
+}
+
+
+#screenshots {
+padding-top: 15%;
+}
+.contact {
+padding-bottom:0px;
+  text-align: center;
+}
+.cardicon{
+vertical-align: inherit !important;
+padding-bottom:20px !important;
+}
+#s-and-t-text{
+  padding:0 10%;
+}
+
+
