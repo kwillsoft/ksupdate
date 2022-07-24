@@ -668,5 +668,13 @@ padding-bottom:20px !important;
 #s-and-t-text{
   padding:0 10%;
 }
+@media screen and (max-width: 960px) {
+  #portfolio{
+ 
+    padding-top: 30px;
+ 
+
+   }
+ }
 
 
