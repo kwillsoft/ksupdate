@@ -673,9 +673,9 @@ padding-bottom:20px !important;
   padding:0 10%;
 }
 @media screen and (max-width: 960px) {
-  #portfolio{
+  .recent{
  
-    padding-top: 180px !important;
+ padding-top:220px;
  
 
    }
