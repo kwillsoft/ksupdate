@@ -675,10 +675,11 @@ padding-bottom:20px !important;
 @media screen and (max-width: 960px) {
   #portfolio{
  
-    padding-top: 30px;
+    padding-top: 80px !important;
  
 
    }
  }
+
 
 
