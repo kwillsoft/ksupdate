@@ -4,6 +4,13 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
     Theme Color: #2d62d3           #244EA9 is the monochromatic complimentary color     
     Darkmode Theme color #030113   #0B0443is the monochromatic complimentary color      
+@media screen and (min-width: 960px) {
+  #about-text {
+    max-width: 45%;
+    padding: 90px 90px 90px 90px;
+
+   }
+ }
 
            fonts: 'Comfortaa',cursive@media screen and (max-width: 960px) {
 
@@ -499,7 +506,7 @@ font-family: 'Raleway', sans-serif;
 
    @media screen and (max-width: 960px) {
       #imagediv {
-       visibility:hidden;
+       display:none !important;
         
        }
      }
