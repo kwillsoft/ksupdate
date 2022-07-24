@@ -483,6 +483,15 @@ font-family: 'Raleway', sans-serif;
  width: 100%;
  background-color: White;
 }
+
+  #about-text {
+    width: 100%;
+    padding: 25px !important;
+    position: absolute;
+    
+   }
+ 
+
 @media screen and (max-width: 960px) {
   #about-text {
     width: 100%;
