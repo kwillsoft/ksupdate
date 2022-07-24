@@ -486,7 +486,7 @@ font-family: 'Raleway', sans-serif;
 @media screen and (max-width: 960px) {
   #about-text {
     width: 100%;
-    padding: 80px 25px 25px 25px !important;
+    padding: 25px 25px 80px 25px !important;
     position: absolute;
     
    }
