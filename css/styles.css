@@ -5,7 +5,9 @@
     Theme Color: #2d62d3           #244EA9 is the monochromatic complimentary color     
     Darkmode Theme color #030113   #0B0443is the monochromatic complimentary color      
 
-           fonts: 'Comfortaa',cursive  
+           fonts: 'Comfortaa',cursive@media screen and (max-width: 960px) {
+
+
         sections:
                1. Top section- The navbar, logo etc.
                2. Parallax section-the image behind the jumbotron.
