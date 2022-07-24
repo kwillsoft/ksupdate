@@ -494,7 +494,7 @@ font-family: 'Raleway', sans-serif;
 
    @media screen and (max-width: 960px) {
       #imagediv {
-       display:none;
+       visibility:hidden;
         
        }
      }
