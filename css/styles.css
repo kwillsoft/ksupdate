@@ -494,9 +494,7 @@ font-family: 'Raleway', sans-serif;
 
    @media screen and (max-width: 960px) {
       #imagediv {
-        width: 35%;
-        padding: 55% 0px 0px 0px;
-        text-align: inherit center;
+       display:none;
         
        }
      }
