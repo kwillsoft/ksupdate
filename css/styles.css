@@ -486,13 +486,7 @@ font-family: 'Raleway', sans-serif;
  background-color: White;
 }
 
-  #about-text {
-    width: 100%;
-    padding: 25px !important;
-    position: absolute;
-    
-   }
- 
+
 
 @media screen and (max-width: 960px) {
   #about-text {
@@ -520,14 +514,14 @@ font-family: 'Raleway', sans-serif;
        }
      }
    
-     @media screen and (max-width: 960px) {
-      #about-text {
-        width: 100%;
-        padding: 35px;
-        text-align: left;
-    
-       }
-     }
+@media screen and (min-width: 960px) {
+  #about-text {
+    max-width: 45%;
+    padding: 90px 90px 90px 90px;
+
+   }
+ }
+
      @media screen and (max-width: 960px) {
       .caps  {
         font-size: 18px!important;
